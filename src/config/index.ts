@@ -8,9 +8,9 @@ if (!environment) {
 }
 export const config: IConfig = {
     port: process.env.PORT || 3000,
-    dbName: process.env.DATABASE || 'bigstack',
+    dbName: process.env.DATABASE || 'node complete',
     dbUsername: process.env.USERNAME || 'root',
-    dbPassword: process.env.PASSWORD || 'password',
+    dbPassword: process.env.PASSWORD || 'rootpass',
     dbHost: process.env.HOST || 'localhost',
     dbDialect: Dialect.MY_SQL,
     jwtSecret: process.env.JWT_SECRET || 'secret',

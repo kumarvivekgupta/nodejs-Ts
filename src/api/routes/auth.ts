@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import {Validators} from '../../utils/validators'
+import {Validators} from '../../utils/validators';
+import {signUp} from '../controllers/auth.controller';
 
 
 export const router:Router=Router();
@@ -13,4 +14,4 @@ router.get('/', (req, res) => {
 // @PATH:api/auth/register
 // @DESC: create new user to database
 // @ACCESS: public
-router.get('/register',Validators.getSignUpValidators(),signup);
+router.get('/register',Validators.getSignUpValidators(),signUp);
