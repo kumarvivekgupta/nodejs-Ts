@@ -30,10 +30,10 @@ export class AuthService{
                 };
 
             } catch (error) {
-              //  throw new MessageCodeError(error.message, 500);
+                throw new MessageCodeError(error.message, 500);
             }
         } else {
-          //  throw new MessageCodeError('User already exists!', 400);
+            throw new MessageCodeError('User already exists!', 400);
         }
     }
 
@@ -54,10 +54,10 @@ export class AuthService{
                     }
                 }
             } else {
-             //   throw new MessageCodeError('Incorrect password!', 400);
+                throw new MessageCodeError('Incorrect password!', 400);
             }
         } else {
-           // throw new MessageCodeError('Incorrect email address!', 400);
+            throw new MessageCodeError('Incorrect email address!', 400);
         }
     }
 
