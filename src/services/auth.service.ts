@@ -5,7 +5,7 @@ import { IUser } from '../interface/user';
 import { TYPES } from '../interface/types';
 import { UserTransformer } from '../transformers/user.transformer';
 import { ISignUpResponse } from '../responses/signup';
-// import { MessageCodeError } from '../errors/message-code-error';
+import { MessageCodeError } from '../errors/message-code-error';
 import jwt from 'jsonwebtoken';
 import { config } from '../config';
 import { ILoginResponse } from '../responses/login';
